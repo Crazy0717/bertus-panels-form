@@ -104,6 +104,14 @@ body {
     padding-top: 40px !important;
   }
 }
+
+@media (min-device-width: 320px) and (max-device-width: 768px) {
+  .label-size {
+    text-wrap: wrap !important;
+    word-wrap: break-word !important;
+  }
+}
+
 /* 
 @media screen and (max-width: 447px) {
   .Bertus_text {
