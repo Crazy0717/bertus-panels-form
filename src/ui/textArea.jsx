@@ -5,7 +5,6 @@ const TextArea = ({ label, height, helpId }) => {
         className="form-control textArea"
         placeholder={label}
         style={{ height: height, paddingTop: "40px" }}
-		defaultValue={"asdcsdascsacsdcsdcsa"}
         id={helpId}
       ></textarea>
       <label className="label-size" htmlFor="floatingTextarea2">
