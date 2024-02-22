@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: rgb(98, 210, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(98, 210, 251, 0.28975286403623945) 30%,
+    rgba(122, 205, 228, 0.3457752729998249) 35%,
+    rgba(78, 241, 216, 0.4130021637561274) 100%
+  );
+}
+
+.Loader {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+.Loader img {
+  width: 100%;
+  height: 100%;
+}
+#brokenTextArea {
+  padding-top: 70px !important;
+}
+
+@media screen and (max-width: 447px) {
+  .Bertus_text {
+    font-size: 20px;
+  }
+
+  .label-size {
+    text-wrap: wrap !important;
+    font-size: 11px;
+  }
+
+  .textArea {
+    padding-top: 150px !important;
+  }
+}
+
+@media screen and (min-width: 447px) and (max-width: 769px) {
+  .Bertus_text {
+    font-size: 22px;
+  }
+  .label-size {
+    text-wrap: wrap !important;
+    font-size: 14px;
+  }
+
+  .textArea {
+    padding-top: 50px !important;
+  }
+  #brokenTextArea {
+    padding-top: 50px !important;
+    color: orange;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .Bertus_text {
+    font-size: 24px;
+  }
+  .label-size {
+    text-wrap: wrap !important;
+    font-size: 14px;
+  }
+
+  .textArea {
+    padding-top: 50px !important;
+  }
+
+  #brokenTextArea {
+    padding-top: 30px !important;
+    color: green;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .Bertus_text {
+    font-size: 30px;
+  }
+  #brokenTextArea {
+    padding-top: 40px !important;
+    color: blue;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #brokenTextArea {
+    padding-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .Bertus_text {
+    font-size: 20px;
+  }
+
+  .label-size {
+    text-wrap: wrap !important;
+    font-size: 14px;
+  }
+
+  .textArea {
+    padding-top: 50px !important;
+  }
+}
+
+@media screen and (min-width: 447px) and (max-width: 769px) {
+  .Bertus_text {
+    font-size: 22px;
+  }
+  .label-size {
+    text-wrap: wrap !important;
+    font-size: 14px;
+  }
+
+  .textArea {
+    padding-top: 50px !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .Bertus_text {
+    font-size: 24px;
+  }
+  .label-size {
+    text-wrap: wrap !important;
+    font-size: 14px;
+  }
+
+  .textArea {
+    padding-top: 50px !important;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .Bertus_text {
+    font-size: 30px;
+  }
+}
