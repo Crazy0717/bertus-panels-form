@@ -107,7 +107,6 @@ body {
 
 @media (min-device-width: 320px) and (max-device-width: 768px) {
   .label-size {
-    text-wrap: wrap !important;
     word-wrap: break-word !important;
   }
 }
@@ -115,7 +114,6 @@ body {
 /* Non-Retina */
 @media screen and (-webkit-max-device-pixel-ratio: 1) {
   .label-size {
-    text-wrap: wrap !important;
     word-wrap: break-word !important;
   }
 }
@@ -126,7 +124,6 @@ body {
   only screen and (min--moz-device-pixel-ratio: 1.5),
   only screen and (min-device-pixel-ratio: 1.5) {
   .label-size {
-    text-wrap: wrap !important;
     word-wrap: break-word !important;
   }
 }
@@ -134,7 +131,6 @@ body {
 /* iPhone Portrait */
 @media screen and (max-device-width: 768px) and (orientation: portrait) {
   .label-size {
-    text-wrap: wrap !important;
     word-wrap: break-word !important;
   }
 }
@@ -142,7 +138,6 @@ body {
 /* iPhone Landscape */
 @media screen and (max-device-width: 768px) and (orientation: landscape) {
   .label-size {
-    text-wrap: wrap !important;
     word-wrap: break-word !important;
   }
 }
