@@ -113,7 +113,7 @@ body {
 }
 
 /* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+@media screen and (max-device-width: 768px) and (orientation: portrait) {
   .label-size {
     text-wrap: wrap !important;
     word-wrap: break-word !important;
@@ -121,7 +121,7 @@ body {
 }
 
 /* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation: landscape) {
+@media screen and (max-device-width: 768px) and (orientation: landscape) {
   .label-size {
     text-wrap: wrap !important;
     word-wrap: break-word !important;
