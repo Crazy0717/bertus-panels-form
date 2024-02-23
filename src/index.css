@@ -31,9 +31,28 @@ body {
   height: 100%;
 }
 
+.label-size {
+  text-wrap: wrap !important;
+  word-wrap: break-word !important;
+  font-size: 11px;
+  overflow-wrap: break-word !important;
+}
+
+label {
+  overflow-wrap: break-word !important;
+}
+
 #brokenTextArea {
   padding-top: 70px !important;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch !important;
+  overflow-wrap: break-word !important;
+}
+
+.form-floating {
+  -webkit-overflow-scrolling: touch !important;
+  text-wrap: wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
 }
 
 @media screen and (max-width: 447px) {
@@ -45,6 +64,7 @@ body {
     text-wrap: wrap !important;
     word-wrap: break-word !important;
     font-size: 11px;
+    overflow-wrap: break-word;
   }
 
   .textArea {
@@ -60,6 +80,7 @@ body {
     text-wrap: wrap !important;
     word-wrap: break-word !important;
     font-size: 14px;
+    overflow-wrap: break-word !important;
   }
 
   .textArea {
@@ -78,6 +99,7 @@ body {
     text-wrap: wrap !important;
     word-wrap: break-word !important;
     font-size: 14px;
+    overflow-wrap: break-word !important;
   }
 
   .textArea {
@@ -95,6 +117,7 @@ body {
   }
   #brokenTextArea {
     padding-top: 40px !important;
+    overflow-wrap: break-word !important;
   }
 }
 
@@ -140,7 +163,11 @@ body {
     word-wrap: break-word !important;
   }
 }
-
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .label-size {
+    word-wrap: break-word !important;
+  }
+}
 /* 
 @media screen and (max-width: 447px) {
   .Bertus_text {
