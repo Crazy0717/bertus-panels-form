@@ -7,7 +7,7 @@ const TextArea = ({ label, height, helpId }) => {
         style={{ height: height, paddingTop: "40px" }}
         id={helpId}
       ></textarea>
-      <label className="label-size" htmlFor="floatingTextarea2">
+      <label className="label-size" htmlFor={helpId}>
         {label}
       </label>
     </div>
