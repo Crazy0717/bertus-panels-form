@@ -16,7 +16,7 @@ const MainForm = () => {
         «Bertus Panels» Янги ходимлар учун сўров анкетаси.
       </h1>
       <form>
-        <FormText label={"Исм/Шарифингиз:"} />
+        <TextArea label={"Исм/Шарифингиз:"} width={"350px"} />
         <FormText
           defaultValue={0}
           label={"Ёшингиз:"}

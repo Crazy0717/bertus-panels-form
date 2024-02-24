@@ -1,10 +1,10 @@
 import { TextareaAutosize } from "@mui/material";
 import { styled } from "@mui/system";
-const TextArea = ({ label, height }) => {
+const TextArea = ({ label, height, width="100%" }) => {
   const Textarea = styled(TextareaAutosize)(
     () => `
     box-sizing: border-box;
-    width: 100%;
+    width: ${width};
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
