@@ -1,16 +1,8 @@
 const FormText = ({ type = "text", label, width, defaultValue, height }) => {
   return (
     <div className="form-floating m-3" style={{ width: width }}>
-      <input
-        type={type}
-        className="form-control"
-        placeholder={label}
-        defaultValue={defaultValue}
-        style={{ height: height }}
-      />
-      <label className="label-size" htmlFor="floatingInput">
-        {label}
-      </label>
+      <p>{label}</p>
+      <input type="number" min={0} defaultValue={defaultValue} />
     </div>
   );
 };

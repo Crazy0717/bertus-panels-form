@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -26,49 +27,35 @@ body {
   top: 0;
   left: 0;
 }
+
 .Loader img {
   width: 100%;
   height: 100%;
 }
 
-.label-size {
-  text-wrap: wrap !important;
-  word-wrap: break-word !important;
-  font-size: 11px;
-  overflow-wrap: break-word !important;
-}
-
-label {
-  overflow-wrap: break-word !important;
-}
-
-#brokenTextArea {
-  padding-top: 70px !important;
-  -webkit-overflow-scrolling: touch !important;
-  overflow-wrap: break-word !important;
+.Textarea {
+  margin: 1rem;
 }
 
 .form-floating {
-  -webkit-overflow-scrolling: touch !important;
-  text-wrap: wrap !important;
-  word-wrap: break-word !important;
-  overflow-wrap: break-word !important;
+  max-width: 400px;
+  background-color: white;
+  border: 1px solid #909090;
+  border-radius: 4px;
+  padding: 8px 12px;
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    padding: 0 20px 6px 20px;
+    outline: none;
+    border: none;
+  }
 }
 
 @media screen and (max-width: 447px) {
   .Bertus_text {
     font-size: 20px;
-  }
-
-  .label-size {
-    text-wrap: wrap !important;
-    word-wrap: break-word !important;
-    font-size: 11px;
-    overflow-wrap: break-word;
-  }
-
-  .textArea {
-    padding-top: 150px !important;
   }
 }
 
@@ -76,38 +63,11 @@ label {
   .Bertus_text {
     font-size: 22px;
   }
-  .label-size {
-    text-wrap: wrap !important;
-    word-wrap: break-word !important;
-    font-size: 14px;
-    overflow-wrap: break-word !important;
-  }
-
-  .textArea {
-    padding-top: 50px !important;
-  }
-  #brokenTextArea {
-    padding-top: 50px !important;
-  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 990px) {
   .Bertus_text {
     font-size: 24px;
-  }
-  .label-size {
-    text-wrap: wrap !important;
-    word-wrap: break-word !important;
-    font-size: 14px;
-    overflow-wrap: break-word !important;
-  }
-
-  .textArea {
-    padding-top: 50px !important;
-  }
-
-  #brokenTextArea {
-    padding-top: 30px !important;
   }
 }
 
@@ -115,105 +75,4 @@ label {
   .Bertus_text {
     font-size: 30px;
   }
-  #brokenTextArea {
-    padding-top: 40px !important;
-    overflow-wrap: break-word !important;
-  }
 }
-
-@media screen and (min-width: 1200px) {
-  #brokenTextArea {
-    padding-top: 40px !important;
-  }
-}
-
-@media (min-device-width: 320px) and (max-device-width: 768px) {
-  .label-size {
-    word-wrap: break-word !important;
-  }
-}
-
-/* Non-Retina */
-@media screen and (-webkit-max-device-pixel-ratio: 1) {
-  .label-size {
-    word-wrap: break-word !important;
-  }
-}
-
-/* Retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
-  .label-size {
-    word-wrap: break-word !important;
-  }
-}
-
-/* iPhone Portrait */
-@media screen and (max-device-width: 768px) and (orientation: portrait) {
-  .label-size {
-    word-wrap: break-word !important;
-  }
-}
-
-/* iPhone Landscape */
-@media screen and (max-device-width: 768px) and (orientation: landscape) {
-  .label-size {
-    word-wrap: break-word !important;
-  }
-}
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .label-size {
-    word-wrap: break-word !important;
-  }
-}
-/* 
-@media screen and (max-width: 447px) {
-  .Bertus_text {
-    font-size: 20px;
-  }
-
-  .label-size {
-    text-wrap: wrap !important;
-    font-size: 14px;
-  }
-
-  .textArea {
-    padding-top: 50px !important;
-  }
-}
-
-@media screen and (min-width: 447px) and (max-width: 769px) {
-  .Bertus_text {
-    font-size: 22px;
-  }
-  .label-size {
-    text-wrap: wrap !important;
-    font-size: 14px;
-  }
-
-  .textArea {
-    padding-top: 50px !important;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 990px) {
-  .Bertus_text {
-    font-size: 24px;
-  }
-  .label-size {
-    text-wrap: wrap !important;
-    font-size: 14px;
-  }
-
-  .textArea {
-    padding-top: 50px !important;
-  }
-}
-
-@media screen and (min-width: 990px) and (max-width: 1200px) {
-  .Bertus_text {
-    font-size: 30px;
-  }
-} */

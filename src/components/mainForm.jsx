@@ -17,7 +17,12 @@ const MainForm = () => {
       </h1>
       <form>
         <FormText label={"Исм/Шарифингиз:"} />
-        <FormText label={"Ёшингиз:"} type="number" width={"200px"} />
+        <FormText
+          defaultValue={0}
+          label={"Ёшингиз:"}
+          type="number"
+          width={"200px"}
+        />
         <FormText
           label={"Телефон рақамингиз:"}
           type="tel"
@@ -100,7 +105,6 @@ const MainForm = () => {
             "Нима камчиликларим бор деб уйлайсиз? Йўқотишни хохлаган ёмон одатларингиз борми?"
           }
           height={"100px"}
-          helpId={"brokenTextArea"}
         />
         <TextArea
           label={"Коллектив билан чиқишиб ишлай оласизми?"}
@@ -128,12 +132,13 @@ const MainForm = () => {
             "Ўз вазифангизни келишилгандек бажармасангиз сизга қандай чора кўрилишини хохлардингиз:"
           }
           height={"100px"}
-          helpId={"brokenTextArea"}
         />
         <FormText
           label={"Неча кун синов муддатида ишлай оласиз?"}
           type="number"
-          height={"100px"}
+          height={"90px"}
+          width={"auto"}
+          defaultValue={0}
         />
         <TextArea
           label={
