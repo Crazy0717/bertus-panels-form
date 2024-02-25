@@ -1,11 +1,13 @@
-import { MainForm } from "../components/index";
+import { MainForm, Navbar } from "../components/index";
 
 const Main = () => {
-	return (
-		<div>
-			<MainForm />
-		</div>
-	);
+  return (
+    <div>
+      <Navbar />
+      <MainForm />
+    </div>
+  );
 };
 
 export default Main;
+

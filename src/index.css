@@ -40,7 +40,7 @@ body {
 .form-floating {
   max-width: 400px;
   background-color: white;
-  border: 1px solid #909090;
+  border: 1px solid rgba(83, 83, 88, 0.909) #909090;
   border-radius: 4px;
   padding: 8px 12px;
 
@@ -53,7 +53,64 @@ body {
   }
 }
 
+nav {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 80px;
+  }
+}
+
+.form-image {
+  padding-left: 14px;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid gray;
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.image {
+  width: 180px;
+  border: 1px solid #909090;
+  border-radius: 5px;
+  display: none;
+  margin-top: 10px;
+}
+.show {
+  display: inline-block;
+}
+
+input {
+  position: absolute;
+}
+
+input[type="file" i] {
+  display: none;
+}
+
+input::file-selector-button {
+  display: none;
+}
+
+
+
 @media screen and (max-width: 447px) {
+  nav {
+    img {
+      width: 50px;
+    }
+  }
   .Bertus_text {
     font-size: 20px;
   }
@@ -62,11 +119,17 @@ body {
       width: 100%;
     }
   }
+  .form-floating {
+    padding: 8px 12px 30px 12px;
+  }
 }
 
 @media screen and (min-width: 447px) and (max-width: 769px) {
   .Bertus_text {
     font-size: 22px;
+  }
+  .form-floating {
+    padding: 8px 12px 30px 12px;
   }
 }
 
@@ -74,10 +137,16 @@ body {
   .Bertus_text {
     font-size: 24px;
   }
+  .form-floating {
+    padding: 8px 12px 30px 12px;
+  }
 }
 
 @media screen and (min-width: 990px) and (max-width: 1200px) {
   .Bertus_text {
     font-size: 30px;
+  }
+  .form-floating {
+    padding: 8px 12px 30px 12px;
   }
 }

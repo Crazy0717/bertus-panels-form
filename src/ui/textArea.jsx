@@ -1,6 +1,6 @@
 import { TextareaAutosize } from "@mui/material";
 import { styled } from "@mui/system";
-const TextArea = ({ label, height, width="100%" }) => {
+const TextArea = ({ label, height, width = "100%" }) => {
   const Textarea = styled(TextareaAutosize)(
     () => `
     box-sizing: border-box;
@@ -12,9 +12,12 @@ const TextArea = ({ label, height, width="100%" }) => {
     padding: 8px 12px;
     border-radius: 4px;
     border: 1px solid #909090;
-
+    transition: all .2s ease;
+    
     &:focus{
     outline: 1px solid gray;
+    box-shadow: rgba(83, 83, 88, 0.22) 0px 7px 29px 0px;
+
     }
   `
   );

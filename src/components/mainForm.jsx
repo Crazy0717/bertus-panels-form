@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FormText, Radio, TextArea } from "../ui";
 import Loader from "./Loader";
+import Image from "./Image";
 const MainForm = () => {
   const [loader, setLoader] = useState(false);
 
@@ -16,17 +17,20 @@ const MainForm = () => {
         «Bertus Panels» Янги ходимлар учун сўров анкетаси.
       </h1>
       <form>
+        <Image />
         <TextArea label={"Исм/Шарифингиз:"} width={"350px"} />
         <FormText
           defaultValue={0}
           label={"Ёшингиз:"}
           type="number"
           width={"200px"}
+          height={"`86px"}
         />
         <FormText
           label={"Телефон рақамингиз:"}
           type="tel"
           defaultValue={"+998 "}
+          height={"`86px"}
         />
 
         <TextArea label={"Манзилингиз:"} height={"100px"} />
@@ -133,13 +137,36 @@ const MainForm = () => {
           }
           height={"100px"}
         />
-        <FormText
-          label={"Неча кун синов муддатида ишлай оласиз?"}
-          type="number"
-          height={"90px"}
-          width={"auto"}
-          defaultValue={0}
-        />
+
+        <div className="m-3">
+          <label htmlFor="floatingTextarea2 " className="mb-3">
+            Неча кун синов муддатида ишлай оласиз?
+          </label>
+          <div className="form-check">
+            <input className="form-check-input" type="radio" name={"id4"} />
+            <label className="form-check-label" htmlFor={"id4"}>
+              3 кун
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="radio" name={"id4"} />
+            <label className="form-check-label" htmlFor={"id4"}>
+              5 кун
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="radio" name={"id4"} />
+            <label className="form-check-label" htmlFor={"id4"}>
+              7 кун
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="radio" name={"id4"} />
+            <label className="form-check-label" htmlFor={"id4"}>
+              10 кун
+            </label>
+          </div>
+        </div>
         <TextArea
           label={
             "Бу ерга эълон орқали келдингизми ёки танишингиз тавсияси биланми? "
@@ -148,7 +175,7 @@ const MainForm = () => {
         />
 
         <div className="d-grid gap-2 m-3">
-          <input className="btn btn-primary" type="submit" value={"Yuborish"} />
+          <button className="btn btn-primary" type="submit">Йубориш</button>
         </div>
       </form>
     </div>
