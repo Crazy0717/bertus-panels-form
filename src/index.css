@@ -42,7 +42,7 @@ body {
   background-color: white;
   border: 1px solid rgba(83, 83, 88, 0.909) #909090;
   border-radius: 4px;
-  padding: 8px 12px;
+  padding: 8px 12px 30px 12px;
 
   input {
     width: 100%;
@@ -54,12 +54,13 @@ body {
 }
 
 nav {
-  padding: 10px 15px;
+  padding: 12px 15px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   img {
-    width: 80px;
+    width: 160px;
   }
 }
 
@@ -103,12 +104,10 @@ input::file-selector-button {
   display: none;
 }
 
-
-
 @media screen and (max-width: 447px) {
   nav {
     img {
-      width: 50px;
+      width: 100px;
     }
   }
   .Bertus_text {
@@ -125,6 +124,11 @@ input::file-selector-button {
 }
 
 @media screen and (min-width: 447px) and (max-width: 769px) {
+  nav {
+    img {
+      width: 140px;
+    }
+  }
   .Bertus_text {
     font-size: 22px;
   }

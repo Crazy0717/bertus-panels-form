@@ -2,7 +2,7 @@
 const Navbar = () => {
   return (
     <nav>
-      <img src="./img/logo 1.png" alt="" />
+      <img src="./img/logo 2.png" alt="" />
     </nav>
   );
 };

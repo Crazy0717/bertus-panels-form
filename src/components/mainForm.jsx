@@ -143,30 +143,51 @@ const MainForm = () => {
             Неча кун синов муддатида ишлай оласиз?
           </label>
           <div className="form-check">
-            <input className="form-check-input" type="radio" name={"id4"} />
-            <label className="form-check-label" htmlFor={"id4"}>
+            <input
+              className="form-check-input"
+              id="id7"
+              type="radio"
+              name={"id"}
+            />
+            <label className="form-check-label" htmlFor={"id7"}>
               3 кун
             </label>
           </div>
           <div className="form-check">
-            <input className="form-check-input" type="radio" name={"id4"} />
-            <label className="form-check-label" htmlFor={"id4"}>
+            <input
+              className="form-check-input"
+              id="id8"
+              type="radio"
+              name={"id"}
+            />
+            <label className="form-check-label" htmlFor={"id8"}>
               5 кун
             </label>
           </div>
           <div className="form-check">
-            <input className="form-check-input" type="radio" name={"id4"} />
-            <label className="form-check-label" htmlFor={"id4"}>
+            <input
+              className="form-check-input"
+              id="id9"
+              type="radio"
+              name={"id"}
+            />
+            <label className="form-check-label" htmlFor={"id9"}>
               7 кун
             </label>
           </div>
           <div className="form-check">
-            <input className="form-check-input" type="radio" name={"id4"} />
-            <label className="form-check-label" htmlFor={"id4"}>
-              10 кун
+            <input
+              className="form-check-input"
+              id="id10"
+              type="radio"
+              name={"id"}
+            />
+            <label className="form-check-label" htmlFor={"id10"}>
+              10 кун{" "}
             </label>
           </div>
         </div>
+
         <TextArea
           label={
             "Бу ерга эълон орқали келдингизми ёки танишингиз тавсияси биланми? "
@@ -175,7 +196,9 @@ const MainForm = () => {
         />
 
         <div className="d-grid gap-2 m-3">
-          <button className="btn btn-primary" type="submit">Йубориш</button>
+          <button className="btn btn-primary" type="submit">
+            Йубориш
+          </button>
         </div>
       </form>
     </div>
